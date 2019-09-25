@@ -1,9 +1,9 @@
-function validateName(name) {
+function validateName (name) {
     if (!name) {
         throw new TypeError('Name must not be blank');
 
     }
-    return Input 
+    return name
 };
 // const foo = 'bar';
 
