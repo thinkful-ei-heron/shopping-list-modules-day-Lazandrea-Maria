@@ -28,9 +28,9 @@ const hideCheckedItems = false;
 //   }
 // }
 
-function findById(id) {
-  return store.items.find(item => item.id === id);
-}
+// function findById(id) {
+//   return store.item.find(item => item.id === id);
+// }
 
 export default {
   items,
