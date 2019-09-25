@@ -1,7 +1,7 @@
-const foo = 'bar';
+//const foo = 'bar';
 
-const items: [];
-const hideCheckedItems: false;
+const items = [];
+const hideCheckedItems = false;
 
 export default {
   items,
