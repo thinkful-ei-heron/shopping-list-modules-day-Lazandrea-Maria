@@ -3,9 +3,35 @@ import item from './item.js';
 const items = [];
 const hideCheckedItems = false;
 
+// function findAndDelete(id) {
+
+// }
+
+// function findAndUpdateName(id, newName) {
+//   try() {
+
+//   }catch {
+
+//   }
+//   }
+// }
+
+// function findAndToggleChecked(id) {
+
+// }
+
+// function addItem(name) {
+//   try() {
+
+//   } catch {
+
+//   }
+// }
+
 function findById(id) {
-  return Array.find(store.items);
+  return store.items.find(item => item.id === id);
 }
+
 export default {
   items,
   hideCheckedItems
