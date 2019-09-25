@@ -8,5 +8,5 @@ export default {
   hideCheckedItems
 };
 
-console.log(item);
-console.log(foo);
+// console.log(item);
+// console.log(foo);
