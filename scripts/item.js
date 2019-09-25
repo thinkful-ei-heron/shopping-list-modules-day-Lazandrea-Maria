@@ -1,24 +1,22 @@
 function validateName(name) {
-    if (!name) {
-        throw new TypeError('Name must not be blank');
-
-    }
-    return Input 
-};
+  if (!name) {
+    throw new TypeError('Name must not be blank');
+  }
+  return name;
+}
 // const foo = 'bar';
 
 //export default {};
 
-function create (name){
-    return {
-        id: cuid(),
-        name:name,
-        checked:false,
-    }
+function create(name) {
+  return {
+    id: cuid(),
+    name: name,
+    checked: false
+  };
 }
 
-
 export default {
-    validateName,
-    create,
-  };
+  validateName,
+  create
+};
