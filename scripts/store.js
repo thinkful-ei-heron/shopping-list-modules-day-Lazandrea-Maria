@@ -1,9 +1,7 @@
-const store = {
-  items: [],
-  hideCheckedItems: false
-};
-
 const foo = 'bar';
+
+const items: [];
+const hideCheckedItems: false;
 
 export default {
   items,
