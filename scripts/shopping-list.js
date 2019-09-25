@@ -1,5 +1,6 @@
 import store from './store.js';
 import item from './item.js';
+
 // const store = {
 //   items: [],
 //   hideCheckedItems: false
@@ -46,8 +47,17 @@ const render = function() {
   $('.js-shopping-list').html(shoppingListItemsString);
 };
 
-const addItemToShoppingList = function(itemName) {
-  store.items.push({ id: cuid(), name: itemName, checked: false });
+const addItemToShoppingList = function(itemName) { 
+  try {
+    item.validateName(itemName)
+    store.items.push(item.create(itemName));
+    
+  }
+  catch (error){
+  
+    console.log(`Cannot add item: ${error.message}`)
+  }
+  
 };
 
 const handleNewItemSubmit = function() {
