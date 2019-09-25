@@ -1,7 +1,8 @@
-const store = {
-  items: [],
-  hideCheckedItems: false
-};
+import store from './store.js';
+// const store = {
+//   items: [],
+//   hideCheckedItems: false
+// };
 
 const generateItemElement = function(item) {
   let itemTitle = `<span class="shopping-item shopping-item__checked">${item.name}</span>`;
@@ -142,6 +143,7 @@ const bindEventListeners = function() {
 };
 
 // This object contains the only exposed methods from this module:
+
 export default {
   render,
   bindEventListeners
