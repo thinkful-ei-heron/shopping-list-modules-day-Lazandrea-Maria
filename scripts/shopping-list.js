@@ -48,13 +48,14 @@ const render = function() {
 };
 
 const addItemToShoppingList = function(itemName) {
-  try {
-    item.validateName(itemName);
-    store.items.push(item.create(itemName));
-    render();
-  } catch (error) {
-    console.log(`Cannot add item: ${error.message}`);
-  }
+  store.addItem(itemName);
+  // try {
+  //   item.validateName(itemName);
+  //   store.items.push(item.create(itemName));
+  //   render();
+  // } catch (error) {
+  //   console.log(`Cannot add item: ${error.message}`);
+  // }
 };
 
 const handleNewItemSubmit = function() {
